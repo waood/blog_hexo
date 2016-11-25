@@ -1,0 +1,129 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Darleey
+subtitle: 温水煮青蛙
+description: Dare to be better.
+author: Darleey
+language: zh-Hans
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+#url: https://darleey.github.io/
+url: http://darleey.me/
+root: /
+# permalink: :year/:month/:day/:title/
+permalink: :category/:title.html
+permalink_defaults: 
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: README.md
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 8
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:waood/waood.github.io.git
+  branch: master
+#  repo: git@git.coding.net:darleey/Blog_Hexo.git
+
+# Avatar
+avatar: /images/avatar.png
+
+# 多说
+duoshuo_shortname: darleey
+
+# 百度统计
+baidu_analytics: d86f268ed158cf4ad1fd37f0ba39f7f1
+
+# 自动生成sitemap
+sitemap: sitemap.xml
+baidusitemap: baidusitemap.xml
+
+#rss: atom.xml
+#feed: atom.xml
+feed:
+    type: atom
+    path: /atom.xml
+    limit: 20
+
+
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji  # add emoji
+  anchors:
+    level: 1
+    collisionSuffix: 'p'
+    permalink: false
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+
+
+# 备份项目文件
+backup:
+    type: git
+    theme: next
+    repository:
+      github: git@github.com:waood/blog_hexo.git,master
