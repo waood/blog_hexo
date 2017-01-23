@@ -1,6 +1,6 @@
 ---
 title: 我眼中的Android与iOS
-date: 2016-11-20 23:10:49
+date: 2016-11-19 23:10:49
 tags: [Android,iOS,评论]
 categories: [programming,comment]
 ---
@@ -13,11 +13,11 @@ categories: [programming,comment]
 
 # 前言
 
-这两年叫嚣iOS将统治江湖，Android完蛋的越来越少了。从最近的数据来看[^2]，Android已经占有了近九成的市场，这个数值似乎已经趋于稳定了。这并不代表着iPhone用户的减少，只是Android用户增长地更多而已，只是愿意为iPhone发声的人变少了而已，因为iPhone在某种程度上已经沦为了街机，不复三年前手持iPhone便代表着个性时尚的光景。扯开来说一下，喜欢发声的大多是有富有表现欲的人<*比如博主，捂脸···*>，突然有一天发现自己一直粉着的苹果成了随处可见的大白菜，虽不至于脱粉，但也不会硬着头皮宣传乔帮主的剿匪遗志了。
+这两年叫嚣iOS将统治江湖，Android完蛋的越来越少了。从最近的数据来看[^1]，Android已经占有了近九成的市场，这个数值似乎已经趋于稳定了。这并不代表着iPhone用户的减少，只是Android用户增长地更多而已，只是愿意为iPhone发声的人变少了而已，因为iPhone在某种程度上已经沦为了街机，不复三年前手持iPhone便代表着个性时尚的光景。扯开来说一下，喜欢发声的大多是有富有表现欲的人<*比如博主，捂脸···*>，突然有一天发现自己一直粉着的苹果成了随处可见的大白菜，虽不至于脱粉，但也不会硬着头皮宣传乔帮主的剿匪遗志了。
 
 ![](http://og4ax7q57.bkt.clouddn.com/android-ios-we-competitors.png?imageView2/2/w/600/interlace/0/q/100|watermark/2/text/ZGFybGVleS5tZQ==/font/Y29taWMgc2FucyBtcw==/fontsize/500/fill/I0VGRUZFRg==/dissolve/64/gravity/SouthEast/dx/30/dy/20)
 
-好像忘了什么，Windows Phone？难道你不知道"诺基亚已经被微软卖给了富士康做Android “[^1]？
+好像忘了什么，Windows Phone？难道你不知道"诺基亚已经被微软卖给了富士康做Android "[^2]？
 
 
 
@@ -77,18 +77,13 @@ iOS是一个封闭的系统，这意味着你只能看到那些暴露出来的ap
 ![](http://og4ax7q57.bkt.clouddn.com/android-apple-we-friends.png?imageView2/2/w/700/interlace/0/q/100|watermark/2/text/ZGFybGVleS5tZQ==/font/Y29taWMgc2FucyBtcw==/fontsize/500/fill/I0VGRUZFRg==/dissolve/64/gravity/SouthEast/dx/30/dy/20)
 
 
-<big>Which do you think will the future be, A or B?<big>
-
-
-
-
-
-[^1]: [The **Nokia**-branded **Android** smartphones are on the way](http://gadgets.ndtv.com/mobiles/news/nokia-android-smartphones-set-to-launch-at-mwc-2017-as-hmd-global-confirms-presence-1628186)
-[^2]: 2016年第三季度
+<big>Which do you prefer that  the future would be, A or B?<big>
 
 <small>注：本文图片均来源于网络，版权没有<small>
 
 
+[^1]: 2016年第三季度
+[^2]: [The **Nokia**-branded **Android** smartphones are on the way](http://gadgets.ndtv.com/mobiles/news/nokia-android-smartphones-set-to-launch-at-mwc-2017-as-hmd-global-confirms-presence-1628186)
 
 ---
 [![知识共享许可协议](http://og4ax7q57.bkt.clouddn.com/by-nc-sa.4.0.88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)

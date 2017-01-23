@@ -95,7 +95,7 @@ hexo new [模板名] 文章名
 ### 2.5 引用书上的句子
 
 ```
-{% blockquote Ahthor,Book Name %}
+{% blockquote Author,Book Name %}
 Contents
 {% endblockquote %}
 ```
@@ -114,25 +114,31 @@ Contents
 
 ### 2.7 字体处理
 
-小写 <small>A<small>
+小写 <small>A</small>
 
-大写 <big>A<big>
+大写 <big>A</big>
 
-图片标题  <center><font color=#818285 size=4><B><I>A<B><I></font></center>
+图片标题  <center><font color=#818285 size=4><B><I>A</B></I></font></center>
 
+居中<center>A</center>
 
+居右 <div align = right>A</div>
 
 ### 2.8 图片渲染
 
 ```xml
 图片渲染：在七牛图片源尾部增加以下内容，其中'w','gravity','fontsize','text','dx','dy'等均支持自定义
 text编码:Base64
-?imageView2/2/w/700/interlace/0/q/100|watermark/2/text/ZGFybGVleS5tZQ==/font/Y29taWMgc2FucyBtcw==/fontsize/500/fill/I0VGRUZFRg==/dissolve/64/gravity/SouthEast/dx/30/dy/20
+?imageView2/2/w/700/interlace/0/q/100|watermark/2/text/d2F0ZXItd29vZC5jb20=/font/Y29taWMgc2FucyBtcw==/fontsize/500/fill/I0VGRUZFRg==/dissolve/64/gravity/SouthEast/dx/30/dy/20
 ```
 
 Base64在线编码工具：http://tool.css-js.com/base64.html
 
 
+
+### 2.9 表情
+
+[表情](E:\Tool_Software\Hexo\Settings\checksheet-emoji.md)
 
 ---
 
@@ -158,18 +164,14 @@ Base64在线编码工具：http://tool.css-js.com/base64.html
 当集成了评论系统，如 多说 或者 Disqus，所有新建的页面都将自动开启评论。若你不需要评论，请在页面的 Front-matter 里添加`comments` 字段，并将值设置为 `false`。如下所示：
 
 ```
-title: All tags
-date: 2015-12-16 17:05:24
-type: "tags"
 comments: false
----
 ```
 
 
 
-### 3.4 如何更改字体？
+### 3.4 ~~更改字体？~~
 
-NexT 从 **5.0.1** 版本开始提供一个 [字体定制特性](http://theme-next.iissnan.com/theme-settings.html#fonts-customization)， 请先查看此特性是否能满足你的需求。以下的修改将覆盖 字体定制 的特性。 编辑主题下的 `source/css/_variables/custom.styl` 文件，新增两个变量：
+~~NexT 从 **5.0.1** 版本开始提供一个 [字体定制特性](http://theme-next.iissnan.com/theme-settings.html#fonts-customization)， 请先查看此特性是否能满足你的需求。以下的修改将覆盖 字体定制 的特性。 编辑主题下的 `source/css/_variables/custom.styl` 文件，新增两个变量：~~
 
 ```
 // 标题，修改成你期望的字体族
@@ -436,7 +438,7 @@ ___
     tags: 
       - Markdown
       - 语言
-      categories:
+    categories:
 
 
 

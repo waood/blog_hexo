@@ -10,7 +10,7 @@ menu:
   archives: 归档
   categories: 分类
   tags: 标签
-  about: 关于我
+  about: 关于
   search: 搜索
   guestbook: 留言
   commonweal: 公益404
@@ -23,6 +23,7 @@ sidebar:
 post:
   sticky: 置顶
   posted: 发表于
+  modified: 更新于
   in: 分类于
   visitors: 阅读次数
   read_more: 阅读全文

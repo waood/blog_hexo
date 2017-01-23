@@ -5,7 +5,7 @@ NexT.utils = NexT.$u = {
    * Wrap images with fancybox support.
    */
   wrapImageWithFancyBox: function () {
-    $('.content img').not('.group-picture img,.emoji').each(function () {
+    $('.content img').not('.group-picture img,.post-gallery img,.emoji').each(function () {
 
       var $image = $(this);
       var imageTitle = $image.attr('title');

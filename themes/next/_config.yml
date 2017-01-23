@@ -5,22 +5,32 @@
 # Put your favicon.ico into `hexo-site/source/` directory.
 favicon: /favicon.ico
 
+
+
 # Set default keywords (Use a comma to separate)
-keywords: "Android, Diary, Mirror, Something_Complicated"
+keywords: "Android, Technology, Mirror, Something_Complicated"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-#rss: /atom.xml
+rss: /atom.xml
 
 # Specify the date when the site was setup
 since: 2016
+
+# icon between year and author @Footer
+authoricon: heart
+
+# Footer `powered-by` and `theme-info` copyright
+copyright: true
 
 # Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
 # Tips: Before you open this tag, remeber set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
 canonical: true
 
+# Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
+seo: false
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -51,6 +61,8 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
+  sitemap: sitemap
+
 
 
 
@@ -108,7 +120,8 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: PT Mono
+    size:
 
 
 
@@ -124,9 +137,9 @@ font:
 social:
   #LinkLabel: Link
   GitHub: https://github.com/Darleey
-#  Twitter: https://twitter.com/waterindly
-  微博: http://weibo.com/waood  
-  豆瓣: https://www.douban.com/people/Darleey/
+  Twitter: https://twitter.com/waterindly
+  Weibo: http://weibo.com/waood
+  # 豆瓣: https://www.douban.com/people/Darleey/
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -137,16 +150,16 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-#  Twitter: twitter
-  豆瓣: globe
-  微博: weibo
+  Twitter: twitter
+  # 豆瓣: twitter
+  Weibo: weibo
 
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /images/avatar.png
 
 
 # Table Of Contents in the Sidebar
@@ -174,19 +187,50 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggler.
-  display: post
-  #display: always
+  # display: post
+  display: always
   #display: hide
   #display: remove
 
 
 # Blogrolls
-# 友链
 #links_title: Links
 #links_layout: block
 #links_layout: inline
 #links:
   #Title: http://example.com/
+
+
+# ---------------------------------------------------------------
+# Post Settings
+# ---------------------------------------------------------------
+
+# Automatically scroll page to section which is under <!-- more --> mark.
+scroll_to_more: true
+
+# Automatically excerpt description in homepage as preamble text.
+excerpt_description: true
+
+# Automatically Excerpt. Not recommand.
+# Please use <!-- more --> in the post to control excerpt accurately.
+auto_excerpt:
+  enable: true
+  length: 150
+
+# Post meta display settings
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: true
+  categories: true
+
+
+# Wechat Subscriber
+#wechat_subscriber:
+  #enabled: true
+  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
+  #description: ex. subscribe to my blog by scanning my public wechat account
+
 
 
 # ---------------------------------------------------------------
@@ -207,29 +251,9 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night
+highlight_theme: night bright
 
-
-# Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
-
-
-# Automatically Excerpt. Not recommand.
-# Please use <!-- more --> in the post to control excerpt accurately.
-auto_excerpt:
-  enable: true
-  length: 168
-
-
-# Wechat Subscriber
-#wechat_subscriber:
-  #enabled: true
-  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
-  #description: ex. subscribe to my blog by scanning my public wechat account
-
-
-
-
+  
 # ---------------------------------------------------------------
 # Third Party Services Settings
 # ---------------------------------------------------------------
@@ -237,6 +261,7 @@ auto_excerpt:
 # MathJax Support
 mathjax:
   enable: false
+  per_page: false
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
@@ -252,6 +277,16 @@ mathjax:
 # Disqus
 #disqus_shortname:
 
+# Hypercomments
+#hypercomments_id:
+
+# Gentie productKey
+#gentie_productKey:
+
+# Support for youyan comments system.
+# You can get your uid from http://www.uyan.cc
+#youyan_uid: your uid
+
 # Baidu Share
 # Available value:
 #    button | slide
@@ -265,7 +300,7 @@ mathjax:
 #add_this_id:
 
 # Share
-duoshuo_share: true
+#duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -278,14 +313,17 @@ duoshuo_share: true
 # CNZZ count
 #cnzz_siteid:
 
+# Application Insights
+# See https://azure.microsoft.com/en-us/services/application-insights/
+# application_insights:
 
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
   ua_enable: true
-  admin_enable: false
-  user_id: darleey
+  admin_enable: true
+  user_id: 6282685572712498000
   admin_nickname: Darleey
 
 
@@ -322,22 +360,51 @@ busuanzi_count:
   enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>  访问人数
+  site_uv_header: <i class="fa fa-user"></i>
   site_uv_footer:
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>  总访问量
+  site_pv_header: <i class="fa fa-eye"></i>
   site_pv_footer:
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>  浏览
-  page_pv_footer: 次
+  page_pv_header: <i class="fa fa-file-o"></i>
+  page_pv_footer:
+
 
 # Tencent analytics ID
 # tencent_analytics:
 
+
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
 baidu_push: true
+
+# Google Calendar
+# Share your recent schedule to others via calendar page
+#
+# API Documentation:
+# https://developers.google.com/google-apps/calendar/v3/reference/events/list
+calendar:
+  enable: false
+  calendar_id: <required>
+  api_key: <required>
+  orderBy: startTime
+  offsetMax: 24
+  offsetMin: 4
+  timeZone:
+  showDeleted: false
+  singleEvents: true
+  maxResults: 250
+
+# Algolia Search
+algolia_search:
+  enable: false
+  hits:
+    per_page: 10
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}"
+    hits_stats: "${hits} results found in ${time} ms"
 
 
 
@@ -352,6 +419,8 @@ use_motion: true
 # Fancybox
 fancybox: true
 
+# Canvas-nest
+canvas_nest: false
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
@@ -391,9 +460,19 @@ vendors:
   # See: https://faisalman.github.io/ua-parser-js/
   ua_parser:
 
-  # Internal version: 4.4.0
+  # Internal version: 4.6.2
   # See: http://fontawesome.io/
   fontawesome:
+
+  # Internal version: 1
+  # https://www.algolia.com
+  algolia_instant_js:
+  algolia_instant_css:
+
+  # Internal version: 1.0.0
+  # https://github.com/hustcc/canvas-nest.js
+  canvas_nest:
+
 
 
 # Assets
@@ -402,4 +481,13 @@ js: js
 images: images
 
 # Theme version
-version: 5.0.2
+version: 5.1.0
+
+
+
+# 打上功能
+# reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+# wechatpay: /path/to/wechat-reward-image
+# alipay: /path/to/alipay-reward-image
+
+
